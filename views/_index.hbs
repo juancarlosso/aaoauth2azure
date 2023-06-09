@@ -1,0 +1,12 @@
+<h1>ALL ASSIST - CHUBB</h1>
+{{#if isAuthenticated }}
+<p>Hi {{username}}!</p>
+<a href="/extra/users/id">Ver ID token</a>
+<br>
+<a href="/extra/auth/acquireToken">obtiene Token</a>
+<br>
+<a href="/extra/auth/signout">Sign out</a>
+{{else}}
+<p>Prueba de Sign-in </p>
+<a href="/extra/auth/signin">Sign in</a>
+{{/if}}
